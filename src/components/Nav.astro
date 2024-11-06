@@ -12,20 +12,64 @@ const textLinks: { label: string; href: string }[] = [
 
 /** Icon links to social media — edit these with links to your profiles! */
 const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[] = [
-	{ label: 'Twitter', href: 'https://twitter.com/me', icon: 'twitter-logo' },
-	{ label: 'Twitch', href: 'https://twitch.tv/me', icon: 'twitch-logo' },
+	{ label: 'Linkedin', href: 'https://linkedin.com/in/phillip-d-shields', icon: 'linkedin-logo' },
 	{ label: 'GitHub', href: 'https://github.com/me', icon: 'github-logo' },
-	{ label: 'CodePen', href: 'https://codepen.io/me', icon: 'codepen-logo' },
-	{ label: 'dribbble', href: 'https://dribbble.com/me', icon: 'dribbble-logo' },
-	{ label: 'YouTube', href: 'https://www.youtube.com/@me/', icon: 'youtube-logo' },
 ];
+
+// Array of greetings in different languages
+const greetings: string[] = [
+    "Hello", // English
+    "Hola", // Spanish
+    "Bonjour", // French
+    "Ciao", // Italian
+    "Hallo", // German
+    "こんにちは", // Japanese (Konnichiwa)
+    "안녕하세요", // Korean (Annyeonghaseyo)
+    "你好", // Chinese (Nǐ hǎo)
+    "Привет", // Russian (Privet)
+    "مرحبا", // Arabic (Marhaba)
+    "Namaste", // Hindi
+    "Olá", // Portuguese
+    "Γεια σας", // Greek (Geia sas)
+    "שָׁלוֹם", // Hebrew (Shalom)
+    "Xin chào" // Vietnamese
+];
+
+// Array of "friend" in different languages
+const friendWords: string[] = [
+    "friend", // English
+    "amigo", // Spanish
+    "ami", // French
+    "amico", // Italian
+    "Freund", // German
+    "友達", // Japanese (Tomodachi)
+    "친구", // Korean (Chingu)
+    "朋友", // Chinese (Péngyou)
+    "друг", // Russian (Drug)
+    "صديق", // Arabic (Sadiq)
+    "दोस्त", // Hindi (Dost)
+    "amigo", // Portuguese
+    "φίλος", // Greek (Fílos)
+    "חָבֵר", // Hebrew (Chaver)
+    "bạn" // Vietnamese
+];
+
+function generateRandomGreeting(): string {
+    const randomGreeting = greetings[Math.floor(Math.random() * greetings.length)];
+    const randomFriend = friendWords[Math.floor(Math.random() * friendWords.length)];
+    
+    return `${randomGreeting}, ${randomFriend}!`;
+}
+
+let randomGreeting = generateRandomGreeting();
+
 ---
 
 <nav>
 	<div class="menu-header">
 		<a href="/" class="site-title">
 			<Icon icon="terminal-window" color="var(--accent-regular)" size="1.6em" gradient />
-			Jeanine White
+			{randomGreeting}
 		</a>
 		<menu-button>
 			<template>
