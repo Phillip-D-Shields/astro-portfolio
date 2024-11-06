@@ -8,6 +8,7 @@ description: |
 tags:
   - Design
   - Dev
+  - Svelte
 ---
 
 ## Language Learning App
