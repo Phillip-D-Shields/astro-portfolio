@@ -13,7 +13,7 @@ tags:
 
 ## Project 00: Dice Rolling App
 
-![dice rolling app](../../../public/assets/dice_roller.png)
+![dice rolling app](../../public/assets/dice_roller.png)
 
 Super simple app. Just press a button and get a random dice roll. Nothing fancy, just a nice casual intro to Flutter and Dart to learn the basics.
 
@@ -22,7 +22,7 @@ Super simple app. Just press a button and get a random dice roll. Nothing fancy,
 
 ## Project 01: Quiz App
 
-![quiz app](../../../public/assets/quiz.mov.gif)
+![quiz app](../../assets/quiz.mov.gif)
 
 A quiz app about using Flutter. The app uses dummy data for the questions, but the code makes for great boilerplate for future projects that import data from external sources. The quiz app was a great intro into state management in Flutter and Dart, and there are lots of Dart features used in the code like ternary operators, if statements, for loops, and conditional rendering. 
 
@@ -32,9 +32,9 @@ A quiz app about using Flutter. The app uses dummy data for the questions, but t
 
 ## Project 02: Expense Tracking App
 
-![expense tracking app portrait](../../../public/assets/expenses_portrait.mov.gif)
+![expense tracking app portrait](../../assets/expenses_portrait.mov.gif)
 
-![expense tracking app landscape](../../../public/assets/expenses_landscape.mov.gif)
+![expense tracking app landscape](../../assets/expenses_landscape.mov.gif)
 
 
 This app was a big step up from the previous. There is more interactivity, a wider number of custom and standard widgets, some basic theming, and responsive design that allows the app to be viewed and used via portrait or landscape on mobile devices. 
