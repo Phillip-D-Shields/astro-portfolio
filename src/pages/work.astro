@@ -12,7 +12,6 @@ const projects = (await getCollection('work')).sort(
 	(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf(),
 );
 ---
-
 <BaseLayout
 	title="My Work | Phillip Shields"
 	description="some of phillip shields portfolio works"
